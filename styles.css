@@ -50,11 +50,11 @@ q:before, q:after {
 	}
 	
 blockquote.tagline {
-  max-width: 600px;         /* Limits width so centering is visible */
-  margin: 1.5rem auto;        /* The 'auto' on left/right centers the block */
-  text-align: center;       /* Centers the text inside the block */
+  max-width: 600px;         
+  margin: 1.5rem auto;        
+  text-align: center;       
   padding: 1.2rem;
-  border-left: none;       /* Removes the default side border */  
+  border-left: none;        
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-style: italic;
@@ -172,8 +172,8 @@ header{
 form {
   display: grid;
   gap: 1.5rem;
-  max-width: 600px; /* Limits width for better readability */
-  background: rgba(0, 0, 0, 0.03); /* Subtle background contrast */
+  max-width: 600px; 
+  background: rgba(0, 0, 0, 0.03); 
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -283,6 +283,12 @@ h2 {
   margin-bottom: 0.5rem;
   text-transform: uppercase; 
   letter-spacing: -1px; 
+}
+
+video {
+  width: 100%;    
+  height: auto;   
+  display: block; 
 }
 
 /* Medium 620px */
