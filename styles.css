@@ -102,32 +102,32 @@ body.dark-mode {
 
 /* Skip Link Styles */
 
-
-{
-	font-family: sans-serif;
-	line-height: 1.35;
-}
-
-#skipLink{
-	position: absolute;
-	left: -999px;
-	height:  0;
-	width:  0;
-}
-
-#skipLink:focus{
-	top: 1em;
-	left: 1em;
-	display: block;
-	font-size: 1.2em;
-	padding: 0.5em;
-	width: 25%;
-	height: 1.5em;
-	line-height: 1.3em;
-	
+html {
+    font-family: sans-serif;
+    line-height: 1.35;
 }
 
 
+#skipLink {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skipLink:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.5em;
+    background: var(--news-flash);
+    color: white;
+    text-align: center;
+}
 /* Navigation Styles */
 nav ul {
   list-style: none;
@@ -135,7 +135,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--blue-bulletin);
   font-weight: 600;
 }
 
@@ -262,7 +262,8 @@ header, main, footer {
   margin: auto;
 }
 
-h1, h2, h3 { font-family: var(--font-heading); margin-bottom: 1rem; color: var(--blue-bulletin); }
+h1, h2, h3 { font-family: var(--font-heading); margin-bottom: 1rem; 
+  color: var(--blue-bulletin); }
 p { margin-bottom: 1rem; }
 
 section {
@@ -358,7 +359,3 @@ video {
     border-bottom: 5px solid var(--news-flash);
   }
 }
-
-
-
-
