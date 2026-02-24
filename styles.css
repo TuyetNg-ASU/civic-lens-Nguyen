@@ -108,7 +108,7 @@ html {
 }
 
 
-#skipLink {
+.skipLink {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -117,17 +117,19 @@ html {
     overflow: hidden;
 }
 
-#skipLink:focus {
-    position: static;
+.skip-link:focus {
+    position: fixed; 
+    left: 10px;
+    top: 10px;
     width: auto;
     height: auto;
-    display: block;
-    font-size: 1.2em;
-    padding: 0.5em;
+    z-index: 100;
+    padding: 1rem;
     background: var(--news-flash);
     color: white;
-    text-align: center;
 }
+
+
 /* Navigation Styles */
 nav ul {
   list-style: none;
